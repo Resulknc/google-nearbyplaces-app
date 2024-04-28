@@ -1,0 +1,12 @@
+<div class="fullscreen-map">
+  <google-map height="100%"
+            width="100%"
+            [zoom]="zoom"
+            (mapClick)="moveMap($event)"
+            (mapMousemove)="move($event)">
+
+    <map-marker *ngFor="let marker of markers" [position]="marker">
+    </map-marker>
+  </google-map>
+</div>
+

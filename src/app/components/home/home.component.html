@@ -1,0 +1,19 @@
+<div  class="container">
+    <div class="input-container">
+        <label for="latitude">Longitude:</label>
+        <input #longitude type="number" >
+    </div>
+    <div class="input-container">
+        <label for="latitude">Latitude:</label>
+        <input #latitude type="number">
+    </div>
+    <div class="input-container">
+        <label for="latitude">Radius:</label>
+        <input #radius type="number">
+    </div>
+    <button id="submitBtn" (click)="onButtonClick(longitude.valueAsNumber,latitude.valueAsNumber,radius.valueAsNumber)">Search</button>
+
+</div>
+
+  
+  
