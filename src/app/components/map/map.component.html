@@ -1,6 +1,7 @@
 <div class="fullscreen-map">
   <google-map height="100%"
             width="100%"
+            [center]="center"
             [zoom]="zoom"
             (mapClick)="moveMap($event)"
             (mapMousemove)="move($event)">
